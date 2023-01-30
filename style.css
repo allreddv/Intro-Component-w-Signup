@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* -------------------------------------------------------------------------------------- 
+                            Variables
+--------------------------------------------------------------------------------------  */
+
+
+:root {
+
+--Red: hsl(0, 100%, 74%) ;
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--Dark-Blue: hsl(249, 10%, 26%); 
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------------------- 
+                            Mobile First
+--------------------------------------------------------------------------------------  */
+
+body {
+    background-image: url(./images/bg-intro-mobile.png), linear-gradient(rgba(255, 121, 121, 0.899), rgba(255, 121, 121, 0.895));
+    min-height: 100vh;
+
+}
+
+main {
+    width: 100vw;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+
+}
+
+.main__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    margin-top: 6.4rem;
+}
+
+.main__text {
+    font-weight: 500;
+    line-height: 2.6rem;
+    margin-top: 1.6rem;
+}
+
+.main__price--container {
+    display: flex;
+    background-color: var(--Blue);
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;   
+    margin-top: 6.4rem; 
+    padding: 1.8rem  6.6rem;
+}
+
+.main__price {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.6rem ;
+}
+
+.main__price span {
+    font-weight: 700 ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+    background-color: white;
+    padding: 2.4rem;
+    border-radius: 10px; 
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);  
+    font-family: inherit;
+    gap: 1.6rem;
+}
+
+form input {
+    width: 28rem;
+    height: 5.6rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    padding-left: 2rem;
+    align-items: center;
+}
+
+form input::placeholder {
+    font-size: 1.4rem;
+}
+
+form input:focus {
+    outline: none;
+}
+
+
+.form__error {
+    color: var(--Red);
+    font-size: 1.1rem;
+    text-align: right;
+    position: relative;
+}
+
+.form__error::after {
+    content: url(images/icon-error.svg);
+    position: absolute;
+    top: -5.5rem;
+    right: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.form__submit {
+    background-color: var(--Green);
+    width: 28rem;
+    height: 5.6rem;
+    color: white;
+    font-family: inherit;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.form__submit:hover {
+   background-image: linear-gradient(rgba(255, 255, 255, 0.294), rgba(255, 255, 255, 0.289));
+  
+    
+}
+
+.form__terms {
+    color: var(--Grayish-Blue);
+    font-size: 1.1rem;
+    margin-top: .8rem;
+
+}
+
+.form__terms span {
+    color: var(--Red);
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------- 
+                            Desktop
+--------------------------------------------------------------------------------------  */
+
+main {
+    flex-direction: row;
+    gap: 4.5rem;
+    padding: 0;
+    align-items: flex-start;
+
+}
+
+.main__title {
+    font-size: 5rem;
+    line-height: 5.5rem;
+    width: 52.5rem;
+    text-align: left;
+    margin-top: 29rem;
+}
+
+.main__text {
+    font-size: 1.6rem;
+    width: 52.5rem;
+    text-align: left;
+}
+
+.main__price--container {
+    margin-top: 12rem ;
+    width: 54rem;
+    padding: 1.7rem 11.2rem;
+    text-align: center;
+
+}
+
+.main__price {
+    text-align: center;
+}
+
+form {
+    padding: 4rem;
+    gap: 2rem;
+}
+
+form input, .form__submit{
+    width: 46rem ;
+}
+
+.form__submit {
+    margin-top: 2rem;
+}
+
