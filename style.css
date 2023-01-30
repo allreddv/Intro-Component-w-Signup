@@ -145,7 +145,7 @@ form input:focus {
 .form__terms {
     color: var(--Grayish-Blue);
     font-size: 1.1rem;
-    margin-top: .8rem;
+    /* margin-top: .8rem; */
 
 }
 
